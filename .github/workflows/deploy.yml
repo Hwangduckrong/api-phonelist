@@ -54,6 +54,6 @@ jobs: # 작업을 정의
             sudo docker rm phonelist || true
             sudo docker run -d \
               --name phonelist \
-              -p 9000:9000 \
+              -p 8000:8000 \
               -v /home/ec2-user/upload:/app/upload \
               hwangduckrong/phonelist:latest
